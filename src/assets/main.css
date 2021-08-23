@@ -1,0 +1,174 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+OffCanvas {
+  color: rgb(38, 28, 44);
+}
+
+.main-panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,rgb(38, 28, 44), rgb(62, 44, 65));
+    color: white;
+}
+
+.hexagram {
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+
+.combine-hexagram {
+  height: 277px;
+}
+
+.description-button {
+  font-size: 2vh;
+  text-decoration: underline;
+}
+
+.center {
+    display:block;
+    margin: auto;
+}
+
+.header {    
+}
+
+.upper-case{
+  text-transform: uppercase;
+}
+
+.combine-name {
+    margin-left: 0;
+    padding-top: 20px;
+    width: 200px;
+    color: white;
+    text-transform: uppercase;	  
+}
+
+.hexagram-name {
+    text-transform: uppercase;
+    text-shadow: -0.0075em 0.0075em 0 #fef2f6, 0.005em 0.005em 0 #e0d2d7, 0.01em 0.01em 0 #c2adb4, 0.015em 0.015em #a89ca1, 0.02em 0.02em 0 #9e9699, 0.025em 0.025em 0 #7e787a, 0.03em 0.03em 0 #777173, 0.035em 0.035em 0 #5e585a;
+}
+
+.glass {
+    transform: scale(1);
+    padding:20px;
+    margin-bottom: 15px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.drag-hex {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba( 255, 255, 255, 1 );
+  position: relative;
+}
+
+.drag-label {
+  position: absolute;
+  top: 18px;
+  left: 100px;
+  color: rgba( 255, 255, 255, 0.4);
+}
+
+.glass-button {
+    margin: 0px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+    color: white;
+    z-index: 10;
+    background-color:  rgba( 255, 255, 255, 0.9);
+}
+
+
+ .glass-button:active {
+    transform: scale(0.9);
+            /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 2px rgba(59, 66, 161, 1);
+            /* Lowering the shadow */
+}
+
+.not-selectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.panel {
+  overflow: auto;
+  width: 100%;
+  height: 22vh;
+  position: relative;
+}
+
+.jj {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 8vh;
+  color: #fff;
+  line-height: 0.85;
+  text-transform: uppercase;
+  background-size: contain;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  -webkit-background-clip: text;
+  z-index: 10;
+}
+.jj:before {
+  content: "shk";
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.5vmin;
+  color: white;
+  -webkit-text-fill-color: white;
+  -webkit-background-clip: none;
+  background-color: red;
+  padding: 3px;
+}
+.jj + .jj {
+  -webkit-text-fill-color: red;
+  color: red;
+  z-index: 20;
+  animation: meh 3s ease-out infinite alternate;
+}
+@keyframes meh {
+  from {
+    clip-path: polygon(100% 0, 100% 120%, 20% 120%, 61% 91%, 94% 47%);
+  }
+  50% {
+    clip-path: polygon(100% 0, 100% 120%, 20% 120%, 59% 52%, 74% 13%);
+  }
+  to {
+    clip-path: polygon(100% 0, 100% 120%, 0 120%, 0 85%, 87% 41%);
+  }
+}
+.jj span {
+  display: block;
+}
+
