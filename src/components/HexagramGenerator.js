@@ -76,10 +76,10 @@ export default class HexagramGenerator extends React.Component {
         </Row>
         <Row className="justify-content-center">
           <Col md="6" sm="6" lg="5" xs="12">
-            <CombineHexagram values={this.state.hexagramValues} />
+            <CombineHexagram values={this.state.hexagramValues} title="Quẻ gốc" />
           </Col>
           <Col md="6" sm="6" lg="5" xs="12">
-            <CombineHexagram values={this.state.tranformValues} />
+            <CombineHexagram values={this.state.tranformValues} title="Biến quẻ"/>
           </Col>
         </Row>
       </>

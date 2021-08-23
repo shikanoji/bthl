@@ -1,9 +1,15 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
 }
 
-OffCanvas {
+.offcanvas {
   color: rgb(38, 28, 44);
+  height: 80vh;
 }
 
 .main-panel {
@@ -13,7 +19,6 @@ OffCanvas {
     left: 0;
     right: 0;
     overflow: auto;
-    height: 100vh;
     background-image: linear-gradient(to bottom right,rgb(38, 28, 44), rgb(62, 44, 65));
     color: white;
 }
@@ -25,7 +30,15 @@ OffCanvas {
 }
 
 .combine-hexagram {
-  height: 277px;
+  height: 310px;
+}
+
+.combine-hexagram-title {
+  height: 30px;
+  border-color: rgba(256, 256, 256, 0.8);
+  margin-bottom: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 1.5px;
 }
 
 .description-button {
@@ -74,7 +87,6 @@ OffCanvas {
   margin: 20px;
   padding: 10px;
   width: 300px;
-  /* background-color: rgba(0, 0, 0, 0.2); */
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
   border-radius: 20px;
   border-width: 1px;
