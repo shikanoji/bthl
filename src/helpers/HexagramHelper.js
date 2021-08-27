@@ -93,16 +93,16 @@ function generateSingleHexagram() {
   var h2 = getRandomInt(2);
   var h3 = getRandomInt(2);
 
-  if (h1 + h2 + h3 == 0) {
+  if (h1 + h2 + h3 === 0) {
     return -1;
   }
-  if (h1 + h2 + h3 == 1) {
+  if (h1 + h2 + h3 === 1) {
     return 0;
   }
-  if (h1 + h2 + h3 == 2) {
+  if (h1 + h2 + h3 === 2) {
     return 1;
   }
-  if (h1 + h2 + h3 == 3) {
+  if (h1 + h2 + h3 === 3) {
     return 2;
   }
 }
@@ -112,7 +112,7 @@ export function getCombineHexagramName(hex1, hex2){
     var hex2String = convertValueArrayToString(hex2);
     var combineHexString = hex2String.concat(hex1String).split("").reverse().join(""); 
     var data = combineHexagramData.find(function (hexagram) {
-      if (hexagram.code == combineHexString) return true;
+      if (hexagram.code === combineHexString) return true;
     });
 
     return data;
@@ -152,4 +152,73 @@ export function getTranformCombineHexagram(values) {
     var hex2Values = convertTranformHexagramValues(hex2);
 
     return [hex1Values, hex2Values];
+}
+
+export function getCombineHexagramFromNumber(odd, even, year, gender) {
+    var oddValues = getHexagramValuesFromNumber(odd, year, gender);
+    var evenValues = getHexagramValuesFromNumber(even, year, gender);
+    console.log(odd, even, year, gender)
+    if (gender === "1") {
+      if ((year%2) === 0) {
+        return [evenValues, oddValues];
+      } else {
+        return [oddValues, evenValues];
+      }
+    } else {
+      if (year % 2 === 1) {
+        return [evenValues, oddValues];
+      } else {
+        return [oddValues, evenValues];
+      }
+    }
+}
+
+export function getHexagramValuesFromNumber(number, year, gender) {
+  switch (number) {
+    case 1: 
+      return [0, 1, 0];
+    case 2: 
+      return [0, 0, 0];
+    case 3: 
+      return [0, 0, 1];
+    case 4: 
+      return [1, 1, 0];
+    case 6: 
+      return [1, 1, 1];
+    case 7:
+      return [0, 1, 1];
+    case 8: 
+      return [1, 0, 0];
+    case 9: 
+      return [1, 0, 1];
+    case 5: 
+      var checkYear = ((year - 1864) % 180) / 60
+      if (checkYear < 1) {
+          if (gender === "1") {
+            return [1, 0, 0];
+          } else {
+            return [0, 0, 0];
+          }
+      } else if (checkYear < 2) {
+        if (gender === "1") {
+            if ((year % 2) === 0) {
+              return [1, 0, 0];
+            } else {
+              return [0, 0, 0];
+            }
+        } else {
+            if (year % 2 === 0) {
+              return [0, 0, 0];
+            } else {
+              return [1, 0, 0];
+            }
+        }
+      } else {
+          if ( gender === "1") {
+            return [1, 0, 1];
+          } else {
+            return [0, 1, 1];
+          }
+      }
+  }
 }

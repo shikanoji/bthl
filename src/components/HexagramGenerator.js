@@ -31,7 +31,7 @@ export default class HexagramGenerator extends React.Component {
   }
 
   trackPos(data) {
-    if (data.x == 238) {
+    if (data.x === 238) {
         var values = createHexagram();
         var tranformValues = getTranformCombineHexagram(values);
         this.setState({

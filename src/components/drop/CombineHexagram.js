@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Row, Col, Offcanvas} from 'react-bootstrap';
+import { Row, Col, Modal, Button} from 'react-bootstrap';
 import Hexagram from './Hexagram';
 import {
   getCombineHexagramName,
@@ -11,7 +11,7 @@ export default function CombineHexagram(props) {
       const handleClose = () => setShow(false);
       const handleShow = () => setShow(true);
 
-      if (props.values.length != 2) {
+      if (props.values.length !==2) {
         return (
           <div className="glass combine-hexagram d-flex align-items-center justify-content-center">
             <div className="loader">...</div>
@@ -22,7 +22,22 @@ export default function CombineHexagram(props) {
           <div className="glass combine-hexagram">
             <Row>
               <div className="combine-hexagram-title justify-content-center">
-                <p align="center">{props.title}</p>
+                <p align="center" onClick={handleShow}>
+                  {props.title} số{" "}
+                  {getCombineHexagramName(props.values[0], props.values[1]).no},
+                  hạng{" "}
+                  <span
+                    className={
+                      getCombineHexagramName(props.values[0], props.values[1])
+                        .rate
+                    }
+                  >
+                    {
+                      getCombineHexagramName(props.values[0], props.values[1])
+                        .rate
+                    }
+                  </span>
+                </p>
               </div>
             </Row>
             <Hexagram values={props.values[1]}></Hexagram>
@@ -36,21 +51,33 @@ export default function CombineHexagram(props) {
                   >
                     Giải nghĩa
                   </div>
-                  <Offcanvas show={show} placement="bottom" onHide={handleClose} {...props}>
-                    <Offcanvas.Header closeButton>
-                      <Offcanvas.Title className="upper-case">
-                        {getHexagramName(props.values[1])}{" "}
-                        {getHexagramName(props.values[0])}{" "}
-                        {
-                          getCombineHexagramName(
-                            props.values[0],
-                            props.values[1]
-                          ).name
-                        }
-                      </Offcanvas.Title>
-                    </Offcanvas.Header>
-                    <Offcanvas.Body>Giải nghĩa quẻ</Offcanvas.Body>
-                  </Offcanvas>
+                  <Modal show={show} onHide={handleClose} centered>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        <span>
+                          {getHexagramName(props.values[1])}{" "}
+                          {getHexagramName(props.values[0])}{" "}
+                          {
+                            getCombineHexagramName(
+                              props.values[0],
+                              props.values[1]
+                            ).name
+                          }
+                        </span>
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      {
+                        getCombineHexagramName(props.values[0], props.values[1])
+                          .meaning
+                      }
+                    </Modal.Body>
+                    <Modal.Footer>
+                      <Button variant="secondary" onClick={handleClose}>
+                        Đóng
+                      </Button>
+                    </Modal.Footer>
+                  </Modal>
                 </div>
               </Col>
               <Col xs="9" sm="8">
@@ -59,6 +86,10 @@ export default function CombineHexagram(props) {
                     align="center"
                     className="hexagram-name align-self-center"
                     onClick={handleShow}
+                    className={
+                      getCombineHexagramName(props.values[0], props.values[1])
+                        .rate
+                    }
                   >
                     {
                       getCombineHexagramName(props.values[0], props.values[1])
