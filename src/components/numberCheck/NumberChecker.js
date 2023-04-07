@@ -53,9 +53,9 @@ export default class NumberChecker extends React.Component {
 
     checkNumber() {
       if (this.state.number != "") {
-          var filterNumber = this.state.number.replace(/[^0-9]/g, "");
+          // var filterNumber = this.state.number.replace(/[^0-9]/g, "");
           var hexagramValues = getCombineHexagramOfNumber(
-            filterNumber,
+            this.state.number,
             this.state.birthYear,
             this.state.gender
           );

@@ -25,11 +25,11 @@ export default function CombineHexagram(props) {
                 <p align="center" onClick={handleShow}>
                   {props.title} số{" "}
                   {getCombineHexagramName(props.values[0], props.values[1]).no},
-                  hạng{" "}
+                  Quẻ {" "}
                   <span
                     className={
                       getCombineHexagramName(props.values[0], props.values[1])
-                        .rate
+                        .rank
                     }
                   >
                     {
@@ -47,9 +47,8 @@ export default function CombineHexagram(props) {
                 <div className="h-100 d-flex justify-content-center">
                   <div
                     className="description-button justify-content-center align-self-center"
-                    onClick={handleShow}
-                  >
-                    Giải nghĩa
+                    onClick={handleShow}>
+                    Giải nghĩa quẻ
                   </div>
                   <Modal show={show} onHide={handleClose} centered>
                     <Modal.Header closeButton>
@@ -69,7 +68,7 @@ export default function CombineHexagram(props) {
                     <Modal.Body>
                       {
                         getCombineHexagramName(props.values[0], props.values[1])
-                          .meaning
+                          .description
                       }
                     </Modal.Body>
                     <Modal.Footer>
@@ -88,7 +87,7 @@ export default function CombineHexagram(props) {
                     onClick={handleShow}
                     className={
                       getCombineHexagramName(props.values[0], props.values[1])
-                        .rate
+                        .rank
                     }
                   >
                     {

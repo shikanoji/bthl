@@ -1,6 +1,11 @@
 import React from 'react';
 import { Nav, Navbar, NavbarBrand } from "react-bootstrap";
-import { AiFillSlackCircle, AiFillStar, AiFillHdd } from "react-icons/ai";
+import {
+  AiFillSlackCircle,
+  AiFillStar,
+  AiFillHdd,
+  AiOutlineDownload,
+} from "react-icons/ai";
 export default function NavMenu(props) {
     return (
       <>
@@ -16,9 +21,13 @@ export default function NavMenu(props) {
                 <AiFillStar></AiFillStar>
                 &nbsp;<span>Trang chủ</span>
               </Nav.Link>
-              <Nav.Link href="/main/number-check">
+              <Nav.Link href="/main/gieo-que">
                 <AiFillHdd></AiFillHdd>
-                &nbsp; Xem số đẹp
+                &nbsp; Gieo Quẻ
+              </Nav.Link>
+              <Nav.Link href="/main/app-download">
+                <AiOutlineDownload></AiOutlineDownload>
+                &nbsp; Tải ứng dụng
               </Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

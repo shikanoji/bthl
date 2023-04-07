@@ -8,12 +8,10 @@ export default function Logo() {
           <Row className="h-100 justify-content-center">
             <div className="panel">
               <h1 className="jj">
-                <span>Kinh</span>
-                <span>Dịch</span>
+                <span>XemSoDep</span>
               </h1>
               <h1 className="jj">
-                <span>Kinh</span>
-                <span>Dịch</span>
+                <span>XemSoDep</span>
               </h1>
             </div>
           </Row>

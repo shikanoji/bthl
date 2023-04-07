@@ -4,7 +4,8 @@ html, body {
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .offcanvas {
@@ -233,13 +234,13 @@ body {
 }
 
 .B {
-  color: rgb(236, 219, 186);
+  color: rgb(229, 129, 96);
 }
 
 .C {
-  color: rgba(167, 153, 183, 0.8);
+  color: rgba(231, 180, 206, 0.8);
 }
 
 .D {
-  color: rgb(243, 139, 160);
+  color: rgb(239, 87, 117);
 }
