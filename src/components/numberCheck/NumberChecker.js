@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Row, Form } from 'react-bootstrap';
 import CombineHexagram from '../drop/CombineHexagram.js';
 import {getCombineHexagramOfNumber} from '../../helpers/NumberCheckHelper.js';
+import {AiOutlineSearch} from "react-icons/ai";
 
 export default class NumberChecker extends React.Component {
 
@@ -85,20 +86,22 @@ export default class NumberChecker extends React.Component {
         return (
           <>
             <Row className="justify-content-center">
-              <Col xs={12} md={6} lg={5}>
+              <Col xs={12} md={8} lg={5}>
                 <Row className="justify-content-center">
                   <div>
-                    <h3 align="center">KIỂM TRA CÁT HUNG DÃY SỐ</h3>
+                    <p className="heading">Xem số đẹp Kinh Dịch</p>
                   </div>
                 </Row>
                 <Row className="justify-content-center">
-                  <div className="drag-hex number-form">
+                  <div className="number-form col-11">
                     <Form.Control
+                      className="number-input"
                       type="text"
                       defaultValue={this.state.number}
                       placeholder="Nhập số điện thoại, biển số xe, số tài khoản,..."
                       onChange={(e) => this.onNumberChanged(e)}
                     />
+                    <AiOutlineSearch className="search-button"></AiOutlineSearch>
                   </div>
                 </Row>
                 <Row className="justify-content-center form-row">

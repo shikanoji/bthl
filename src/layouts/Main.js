@@ -10,9 +10,9 @@ function Main(props) {
     return (
       <div className="main-panel">
         <NavMenu></NavMenu>
-        <Row className="header justify-content-center">
+        {/* <Row className="header justify-content-center">
           <Logo></Logo>
-        </Row>
+        </Row> */}
         <Switch>
           {routes.map((prop, key) => {
             return (

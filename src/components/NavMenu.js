@@ -1,33 +1,42 @@
 import React from 'react';
 import { Nav, Navbar, NavbarBrand } from "react-bootstrap";
-import {
-  AiFillSlackCircle,
-  AiFillStar,
-  AiFillHdd,
-  AiOutlineDownload,
-} from "react-icons/ai";
+import logo from '../assets/images/logo.svg';
 export default function NavMenu(props) {
     return (
       <>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <NavbarBrand className="d-flex align-items-center">
-            <AiFillSlackCircle></AiFillSlackCircle>
-            <span>SHK Kinh Dịch</span>
-          </NavbarBrand>
+        <Navbar
+          fixed="top"
+          collapseOnSelect
+          expand="lg"
+          bg="dark"
+          variant="dark"
+        >
+          <Nav.Link href="/main/home">
+            <NavbarBrand className="d-flex align-items-center">
+              <img src={logo} width={30} height={30} title alt />
+              &nbsp;
+              <span>
+                <b>XemSoDep</b>
+              </span>
+            </NavbarBrand>
+          </Nav.Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/main/home">
-                <AiFillStar></AiFillStar>
-                &nbsp;<span>Trang chủ</span>
+                <span>
+                  <b>Trang chủ</b>
+                </span>
               </Nav.Link>
               <Nav.Link href="/main/gieo-que">
-                <AiFillHdd></AiFillHdd>
-                &nbsp; Gieo Quẻ
+                <span>
+                  <b>Gieo Quẻ</b>
+                </span>
               </Nav.Link>
               <Nav.Link href="/main/app-download">
-                <AiOutlineDownload></AiOutlineDownload>
-                &nbsp; Tải ứng dụng
+                <span>
+                  <b>Tải ứng dụng</b>
+                </span>
               </Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

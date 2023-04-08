@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Switch, Redirect, Router } from "react-router-dom
 import Main from './layouts/Main';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/main.css";
+import "./assets/wrapper.css";
 import "./assets/loading.css";
 
 ReactDOM.render(
