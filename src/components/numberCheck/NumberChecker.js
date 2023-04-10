@@ -86,14 +86,14 @@ export default class NumberChecker extends React.Component {
         return (
           <>
             <Row className="justify-content-center">
-              <Col xs={12} md={8} lg={5}>
+              <Col xs="12" md="10" lg="6">
                 <Row className="justify-content-center">
                   <div>
                     <p className="heading">Xem số đẹp Kinh Dịch</p>
                   </div>
                 </Row>
                 <Row className="justify-content-center">
-                  <div className="number-form col-11">
+                  <div className="number-form col-md-8 col-xs-11">
                     <Form.Control
                       className="number-input"
                       type="text"
@@ -104,13 +104,22 @@ export default class NumberChecker extends React.Component {
                     <AiOutlineSearch className="search-button"></AiOutlineSearch>
                   </div>
                 </Row>
-                <Row className="justify-content-center form-row">
-                  <Col xs="4">
-                    <Row className="d-flex align-items-center">
-                      <p align="center">Năm sinh:</p>
-                    </Row>
+                <Row className="form-row justify-content-center">
+                  <Col
+                    className="padding-bottom d-flex flex-column justify-content-center align-items-center"
+                    align="center"
+                    xs="5"
+                    sm="3"
+                    md="2"
+                  >
+                    <span className="align-middle">Năm sinh:</span>
                   </Col>
-                  <Col xs="4" className="no-padding">
+                  <Col
+                    align="center"
+                    xs="4"
+                    md="2"
+                    className="padding-bottom no-padding d-flex flex-column justify-content-center align-items-center"
+                  >
                     <Form.Select
                       value={this.state.birthYear}
                       onChange={(e) => this.onBirthYearChanged(e)}
@@ -123,14 +132,20 @@ export default class NumberChecker extends React.Component {
                       ))}
                     </Form.Select>
                   </Col>
-                </Row>
-                <Row className="justify-content-center form-row">
-                  <Col xs="4">
-                    <Row className="d-flex align-items-center">
-                      <p align="center">Giới tính:</p>
-                    </Row>
+                  <Col
+                    className="padding-bottom d-flex flex-column justify-content-center align-items-center"
+                    xs="5"
+                    sm="3"
+                    md="2"
+                    align="center"
+                  >
+                    Giới tính:
                   </Col>
-                  <Col xs="2" className="no-padding">
+                  <Col
+                    xs="2"
+                    md="1"
+                    className="no-padding d-flex flex-column justify-content-center align-items-center"
+                  >
                     <input
                       type="radio"
                       checked={this.state.gender === "1"}
@@ -141,7 +156,11 @@ export default class NumberChecker extends React.Component {
                     />{" "}
                     <label htmlFor="male">Nam</label>
                   </Col>
-                  <Col xs="2" sm="2" className="no-padding">
+                  <Col
+                    xs="2"
+                    md="1"
+                    className="no-padding d-flex flex-column justify-content-center align-items-center"
+                  >
                     <input
                       type="radio"
                       checked={this.state.gender === "0"}
@@ -153,15 +172,17 @@ export default class NumberChecker extends React.Component {
                     <label htmlFor="female">Nữ</label>
                   </Col>
                 </Row>
+                {/* <Row className="justify-content-center form-row"></Row> */}
                 <Row className="justify-content-center">
                   <Col xs="12" md="8">
                     <Row className="justify-content-center">
-                      <div
+                      <button
                         className="justify-content-center align-items-center glass glass-button search-number-button"
+                        type="submit"
                         onClick={(e) => this.checkNumber()}
                       >
                         <p align="center">Tra cứu</p>
-                      </div>
+                      </button>
                     </Row>
                   </Col>
                 </Row>

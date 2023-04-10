@@ -10,9 +10,9 @@ export default function Hexagram(props) {
           <Col xs="3" sm="4">
             <Row className="h-100">
               <div height="100%" className="center align-self-center">
-                <h3 width="100%" className="hexagram-name align-self-center" align="center">
+                <p className="hexagram-name" width="100%" className="hexagram-name align-self-center" align="center">
                   {getHexagramName(props.values)}
-                </h3>
+                </p>
               </div>
             </Row>
           </Col>

@@ -1,49 +1,50 @@
-html, body {
-    height: 100%;
-    overflow: hidden;
+html,
+body {
+  height: 100%;
+  overflow: hidden;
 }
 
 :root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 body {
-    background: #1B1C26;
-    font-family: 'Poppins', sans-serif;
-    color: #A2A5B3;
-    font-size: 14px;
-    line-height: 1.5em;
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
-    -webkit-text-size-adjust: none;
+  background: #1B1C26;
+  font-family: 'Poppins', sans-serif;
+  color: #A2A5B3;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: none;
 }
 
 .offcanvas {
@@ -52,21 +53,22 @@ body {
 }
 
 .main-panel {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
-    background-image: linear-gradient(to bottom right,rgb(38, 28, 44), rgb(62, 44, 65));
-    color: white;
-    padding-top: 120px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  background-image: linear-gradient(to bottom right, rgb(38, 28, 44), rgb(62, 44, 65));
+  color: white;
+  padding-top: 120px;
+  height: 99vh;
 }
 
 .hexagram {
-    margin-left:auto;
-    margin-right:auto;
-    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .combine-hexagram {
@@ -87,40 +89,39 @@ body {
 }
 
 .center {
-    display:block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
-.header {    
-}
+.header {}
 
-.upper-case{
+.upper-case {
   text-transform: uppercase;
 }
 
 .combine-name {
-    margin-left: 0;
-    padding-top: 20px;
-    width: 200px;
-    color: white;
-    text-transform: uppercase;	  
+  margin-left: 0;
+  padding-top: 20px;
+  width: 200px;
+  color: white;
+  text-transform: uppercase;
 }
 
 .hexagram-name {
-    text-transform: uppercase;
-    text-shadow: -0.0075em 0.0075em 0 #fef2f6, 0.005em 0.005em 0 #e0d2d7, 0.01em 0.01em 0 #c2adb4, 0.015em 0.015em #a89ca1, 0.02em 0.02em 0 #9e9699, 0.025em 0.025em 0 #7e787a, 0.03em 0.03em 0 #777173, 0.035em 0.035em 0 #5e585a;
+  text-transform: uppercase;
+  text-shadow: -0.0075em 0.0075em 0 #fef2f6, 0.005em 0.005em 0 #e0d2d7, 0.01em 0.01em 0 #c2adb4, 0.015em 0.015em #a89ca1, 0.02em 0.02em 0 #9e9699, 0.025em 0.025em 0 #7e787a, 0.03em 0.03em 0 #777173, 0.035em 0.035em 0 #5e585a;
 }
 
 .glass {
-    transform: scale(1);
-    padding:20px;
-    margin-bottom: 15px;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 1px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1.5px solid rgba( 255, 255, 255, 0.4 );
+  transform: scale(1);
+  padding: 20px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
 }
 
 .drag-hex {
@@ -131,9 +132,10 @@ body {
   border-radius: 20px;
   border-width: 1px;
   border-style: solid;
-  border-color: rgba( 255, 255, 255, 1 );
+  border-color: rgba(255, 255, 255, 1);
   position: relative;
 }
+
 .form-control {
   background-color: transparent;
   color: white;
@@ -141,36 +143,38 @@ body {
 }
 
 .number-form {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 1.5em;
-    font-weight: 400;
-    -webkit-text-size-adjust: none;
-    color: #fff;
-    text-align: center;
-    box-sizing: border-box;
-    position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 400;
+  -webkit-text-size-adjust: none;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 20px;
 }
+
 .number-input {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: inherit;
-    overflow: visible;
-    display: block;
-    width: 100%;
-    font-weight: 400;
-    line-height: 1.5;
-    background-color: #fff;
-    background-clip: padding-box;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    border: none !important;
-    box-shadow: none !important;
-    font-size: 1.2em;
-    color: #000;
-    padding: 1rem 1.25rem;
-    height: auto;
-    border-radius: .5rem;
-    padding-right: 55px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+  overflow: visible;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 1.2em;
+  color: #000;
+  padding: 1rem 1.25rem;
+  height: auto;
+  border-radius: .5rem;
+  padding-right: 55px;
 }
 
 
@@ -183,42 +187,47 @@ body {
   position: absolute;
   top: 18px;
   left: 100px;
-  color: rgba( 255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .glass-button {
-    margin: 0px;
-    cursor: pointer;
-    outline: none;
-    transition: 0.2s all;
-    color: white;
-    z-index: 10;
-    background-color:  rgba( 255, 255, 255, 0.9);
+  margin: 0px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+  color: white;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 
- .glass-button:active {
-    transform: scale(0.9);
-            /* Scaling button to 0.98 to its original size */
-    box-shadow: 3px 2px 22px 2px rgba(59, 66, 161, 1);
-            /* Lowering the shadow */
+.glass-button:active {
+  transform: scale(0.9);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 2px rgba(59, 66, 161, 1);
+  /* Lowering the shadow */
 }
 
 .search-number-button {
-    height: 50px;
-    width: 250px;
-    margin: 20px;
-    color: black;
-    padding-top: 10px;
+  height: 50px;
+  width: 250px;
+  margin: 20px;
+  color: black;
+  padding-top: 10px;
 }
 
 .not-selectable {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 /* Logo */
@@ -243,6 +252,7 @@ body {
   -webkit-background-clip: text;
   z-index: 10;
 }
+
 .jj:before {
   /* content: "shk"; */
   display: table;
@@ -255,45 +265,52 @@ body {
   background-color: red;
   padding: 3px;
 }
-.jj + .jj {
+
+.jj+.jj {
   -webkit-text-fill-color: red;
   color: red;
   z-index: 20;
   animation: meh 3s ease-out infinite alternate;
 }
+
 @keyframes meh {
   from {
     clip-path: polygon(100% 0, 100% 120%, 20% 120%, 61% 91%, 94% 47%);
   }
+
   50% {
     clip-path: polygon(100% 0, 100% 120%, 20% 120%, 59% 52%, 74% 13%);
   }
+
   to {
     clip-path: polygon(100% 0, 100% 120%, 0 120%, 0 85%, 87% 41%);
   }
 }
+
 .jj span {
   display: block;
 }
 
 .bg-dark {
   padding: 15px;
-  background-image: linear-gradient(to bottom right , rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
   background-color: transparent !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba( 255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.no-padding{
+.no-padding {
   padding: 0px;
 }
 
-.form-select {text-align-last: center; }
+.form-select {
+  text-align-last: center;
+}
 
 .S {
-  color:  rgb(255, 244, 125);
+  color: rgb(255, 244, 125);
 }
 
 .A {
@@ -313,58 +330,101 @@ body {
 }
 
 .heading {
-      -webkit-tap-highlight-color: transparent;
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    font-family: 'Poppins', sans-serif;
-    -webkit-text-size-adjust: none;
-    text-align: center!important;
-    box-sizing: border-box;
-    margin-top: 0;
-    font-weight: 700;
-    color: #D8B66F;
-    margin-bottom: 1.5rem;
-    padding: 0 20px;
-    font-size: 2.4em;
-    line-height: 1.4;
+  -webkit-tap-highlight-color: transparent;
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'Poppins', sans-serif;
+  -webkit-text-size-adjust: none;
+  text-align: center !important;
+  box-sizing: border-box;
+  margin-top: 0;
+  font-weight: 700;
+  color: #D8B66F;
+  margin-bottom: 1.5rem;
+  padding: 0 20px;
+  font-size: 2.4em;
+  line-height: 1.4;
 }
 
 .search-button {
   color: black;
-    border: none !important;
-    outline: none !important;
-    background: none !important;
-    font-size: 24px;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.mobile-button {
+  height: 3.2rem;
+  object-fit: fill;
+}
+
+.heading-1 {
+  font-size: 1.2em;
+}
+
+.heading-2 {
+  font-size: 1em;
+}
+
+.notice {
+  display: flex;
+  vertical-align: middle;
+  padding: 20px;
+}
+
+.mobile-download-section {
+  spacing: 20;
+}
+
+.modal {
+  color: #2e303d;
+}
+
+.hexagram-name {
+  font-size: 1.2rem;
+}
+
+.padding-bottom {
+  padding-bottom: 10px;
+}
+
+.footer-copyright {
+  background-color: #2e303d;
+}
+
+.main-content {
+  min-height: 75vh;
 }
