@@ -14,15 +14,14 @@ export default function MobileDownload() {
         >
           <Row className="notice mobile-download-section justify-content-center align-items-center">
             <Col
-              xs="2"
-              md="1"
+              xs="1"
               className="d-flex flex-column justify-content-center align-items-center"
             >
               <AiFillBulb size={30}></AiFillBulb>
             </Col>
             <Col
-              xs="10"
-              lg="8"
+              xs="11"
+              lg="7"
               className="d-flex flex-column justify-content-center align-items-center"
             >
               <div>Tải ứng dụng di động để xem giải nghĩa quẻ cụ thể hơn.</div>
