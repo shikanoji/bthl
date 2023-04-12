@@ -50,7 +50,7 @@ export default function CombineHexagram(props) {
                 <div>
                   <button
                     type="button"
-                    class="btn btn-light"
+                    class="btn btn-light show-meaning-button"
                     onClick={handleShow}
                   >
                     Giải nghĩa

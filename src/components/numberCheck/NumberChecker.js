@@ -3,6 +3,7 @@ import { Col, Row, Form } from 'react-bootstrap';
 import CombineHexagram from '../drop/CombineHexagram.js';
 import {getCombineHexagramOfNumber} from '../../helpers/NumberCheckHelper.js';
 import {AiOutlineSearch} from "react-icons/ai";
+import enjoy from '../../assets/images/enjoy.svg';
 
 export default class NumberChecker extends React.Component {
 
@@ -84,119 +85,133 @@ export default class NumberChecker extends React.Component {
 
     render() {
         return (
-          <>
-            <Row className="justify-content-center">
-              <Col xs="12" md="10" lg="6">
-                <Row className="justify-content-center">
-                  <div>
-                    <p className="heading">Xem số đẹp Kinh Dịch</p>
-                  </div>
-                </Row>
-                <Row className="justify-content-center">
-                  <div className="number-form col-md-8 col-xs-11">
-                    <Form.Control
-                      className="number-input"
-                      type="text"
-                      defaultValue={this.state.number}
-                      placeholder="Nhập số điện thoại, biển số xe, số tài khoản,..."
-                      onChange={(e) => this.onNumberChanged(e)}
-                    />
-                    <AiOutlineSearch className="search-button"></AiOutlineSearch>
-                  </div>
-                </Row>
-                <Row className="form-row justify-content-center">
-                  <Col
-                    className="padding-bottom d-flex flex-column justify-content-center align-items-center"
-                    align="center"
-                    xs="5"
-                    sm="3"
-                    md="2"
-                  >
-                    <span className="align-middle">Năm sinh:</span>
-                  </Col>
-                  <Col
-                    align="center"
-                    xs="4"
-                    md="2"
-                    className="padding-bottom no-padding d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <Form.Select
-                      value={this.state.birthYear}
-                      onChange={(e) => this.onBirthYearChanged(e)}
+          <Row>
+            <Col xs="0" md="1" lg="2">
+              <Row className="justify-content-center">
+                <img src={enjoy}></img>
+              </Row>
+            </Col>
+            <Col xs="12" md="10" lg="8">
+              <Row className="justify-content-center">
+                <Col>
+                  <Row className="justify-content-center">
+                    <div>
+                      <p className="heading">Xem số đẹp Kinh Dịch</p>
+                    </div>
+                  </Row>
+                  <Row className="justify-content-center">
+                    <div className="number-form col-md-8 col-xs-11">
+                      <Form.Control
+                        className="number-input"
+                        type="text"
+                        defaultValue={this.state.number}
+                        placeholder="Nhập số điện thoại, biển số xe, số tài khoản,..."
+                        onChange={(e) => this.onNumberChanged(e)}
+                      />
+                      <AiOutlineSearch className="search-button"></AiOutlineSearch>
+                    </div>
+                  </Row>
+                  <Row className="form-row justify-content-center">
+                    <Col
+                      className="padding-bottom d-flex flex-column justify-content-center align-items-center"
+                      align="center"
+                      xs="5"
+                      sm="3"
+                      md="2"
                     >
-                      <option>Chọn năm sinh</option>
-                      {this.yearRange(2040, 1900, -1).map((value, index) => (
-                        <option value={value} key={index}>
-                          {value}
-                        </option>
-                      ))}
-                    </Form.Select>
-                  </Col>
-                  <Col
-                    className="padding-bottom d-flex flex-column justify-content-center align-items-center"
-                    xs="5"
-                    sm="3"
-                    md="2"
-                    align="center"
-                  >
-                    Giới tính:
-                  </Col>
-                  <Col
-                    xs="2"
-                    md="1"
-                    className="no-padding d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <input
-                      type="radio"
-                      checked={this.state.gender === "1"}
-                      value="1"
-                      id="male"
-                      name="gender"
-                      onChange={(e) => this.onGenderChanged(e)}
-                    />{" "}
-                    <label htmlFor="male">Nam</label>
-                  </Col>
-                  <Col
-                    xs="2"
-                    md="1"
-                    className="no-padding d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <input
-                      type="radio"
-                      checked={this.state.gender === "0"}
-                      value="0"
-                      id="female"
-                      name="gender"
-                      onChange={(e) => this.onGenderChanged(e)}
-                    />{" "}
-                    <label htmlFor="female">Nữ</label>
-                  </Col>
-                </Row>
-                {/* <Row className="justify-content-center form-row"></Row> */}
-                <Row className="justify-content-center">
-                  <Col xs="12" md="8">
-                    <Row className="justify-content-center">
-                      <button
-                        className="justify-content-center align-items-center glass glass-button search-number-button"
-                        type="submit"
-                        onClick={(e) => this.checkNumber()}
+                      <span className="align-middle">Năm sinh:</span>
+                    </Col>
+                    <Col
+                      align="center"
+                      xs="4"
+                      md="2"
+                      className="padding-bottom no-padding d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <Form.Select
+                        value={this.state.birthYear}
+                        onChange={(e) => this.onBirthYearChanged(e)}
                       >
-                        <p align="center">Tra cứu</p>
-                      </button>
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-            <Row className="justify-content-center">
-              <Col xs={11} md={6} lg={4}>
-                <CombineHexagram
-                  values={this.state.combineHexagram}
-                  title="Quẻ Dịch"
-                />
-              </Col>
-            </Row>
-          </>
+                        <option>Chọn năm sinh</option>
+                        {this.yearRange(2040, 1900, -1).map((value, index) => (
+                          <option value={value} key={index}>
+                            {value}
+                          </option>
+                        ))}
+                      </Form.Select>
+                    </Col>
+                    <Col
+                      className="padding-bottom d-flex flex-column justify-content-center align-items-center"
+                      xs="5"
+                      sm="3"
+                      md="2"
+                      align="center"
+                    >
+                      Giới tính:
+                    </Col>
+                    <Col
+                      xs="2"
+                      md="1"
+                      className="no-padding d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <input
+                        type="radio"
+                        checked={this.state.gender === "1"}
+                        value="1"
+                        id="male"
+                        name="gender"
+                        onChange={(e) => this.onGenderChanged(e)}
+                      />{" "}
+                      <label htmlFor="male">Nam</label>
+                    </Col>
+                    <Col
+                      xs="2"
+                      md="1"
+                      className="no-padding d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <input
+                        type="radio"
+                        checked={this.state.gender === "0"}
+                        value="0"
+                        id="female"
+                        name="gender"
+                        onChange={(e) => this.onGenderChanged(e)}
+                      />{" "}
+                      <label htmlFor="female">Nữ</label>
+                    </Col>
+                  </Row>
+                  {/* <Row className="justify-content-center form-row"></Row> */}
+                  <Row className="justify-content-center">
+                    <Col>
+                      <Row className="justify-content-center">
+                        <button
+                          className="justify-content-center align-items-center glass glass-button search-number-button"
+                          type="submit"
+                          onClick={(e) => this.checkNumber()}
+                        >
+                          <p align="center">Tra cứu</p>
+                        </button>
+                      </Row>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+              <Row className="justify-content-center">
+                <Col xs="11">
+                  <Row className="justify-content-center">
+                    <CombineHexagram
+                      values={this.state.combineHexagram}
+                      title="Quẻ Dịch"
+                    />
+                  </Row>
+                </Col>
+              </Row>
+            </Col>
+            <Col xs="0" md="1" lg="2">
+              <Row className="justify-content-center">
+                <img src={enjoy}></img>
+              </Row>
+            </Col>
+          </Row>
         );
     }
 } 
