@@ -3,7 +3,7 @@ import { Col, Row, Form } from 'react-bootstrap';
 import CombineHexagram from '../drop/CombineHexagram.js';
 import {getCombineHexagramOfNumber} from '../../helpers/NumberCheckHelper.js';
 import {AiOutlineSearch} from "react-icons/ai";
-import enjoy from '../../assets/images/enjoy.svg';
+import search from '../../assets/images/search.svg';
 
 export default class NumberChecker extends React.Component {
 
@@ -82,16 +82,19 @@ export default class NumberChecker extends React.Component {
         birthYear: e.currentTarget.value,
       });
     }
-
+    
     render() {
         return (
-          <Row>
-            <Col xs="0" md="1" lg="2">
-              <Row className="justify-content-center">
-                <img src={enjoy}></img>
-              </Row>
+          <Row className="number-checker-section">
+            <Col
+              className="d-flex flex-column justify-content-center align-items-center"
+              xs="12"
+              md="12"
+              lg="6"
+            >
+              <img className="description-image" src={search}></img>
             </Col>
-            <Col xs="12" md="10" lg="8">
+            <Col xs="12" md="12" lg="6">
               <Row className="justify-content-center">
                 <Col>
                   <Row className="justify-content-center">
@@ -100,7 +103,7 @@ export default class NumberChecker extends React.Component {
                     </div>
                   </Row>
                   <Row className="justify-content-center">
-                    <div className="number-form col-md-8 col-xs-11">
+                    <div className="number-form">
                       <Form.Control
                         className="number-input"
                         type="text"
@@ -204,11 +207,6 @@ export default class NumberChecker extends React.Component {
                     />
                   </Row>
                 </Col>
-              </Row>
-            </Col>
-            <Col xs="0" md="1" lg="2">
-              <Row className="justify-content-center">
-                <img src={enjoy}></img>
               </Row>
             </Col>
           </Row>

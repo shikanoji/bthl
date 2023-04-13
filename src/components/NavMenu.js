@@ -13,7 +13,7 @@ export default function NavMenu(props) {
         >
           <Nav.Link href="/main/home">
             <NavbarBrand className="d-flex align-items-center">
-              <img src={logo} width={30} height={30} title alt />
+              <img src={logo} width={30} height={30} />
               &nbsp;
               <span>
                 <b>XemSoDep</b>

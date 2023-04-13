@@ -17,13 +17,14 @@ export function getCombineHexagramOfNumber(number, year, gender) {
     oddSum += parseInt(oddNumbers[i]);
   }
 
-  if (evenSum > 30) {
-    evenSum = evenSum - 30;
+  while (evenSum > 30) {
+    evenSum -= 30;
+  }
+  
+  while (oddSum > 30) {
+    oddSum -= 30;
   }
 
-  if (oddSum > 25) {
-    oddSum = oddSum - 25;
-  }
   if ((evenSum % 10) === 0) {
     evenSum = evenSum / 10;
   } else {

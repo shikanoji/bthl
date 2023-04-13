@@ -154,7 +154,7 @@ body {
   box-sizing: border-box;
   position: relative;
   padding-bottom: 20px;
-  max-width: 1500px;
+  max-width: 800px;
 }
 
 .number-input {
@@ -183,6 +183,7 @@ body {
 
 .form-row {
   padding: 5px;
+  max-width: 800px;
 }
 
 .drag-label {
@@ -407,7 +408,8 @@ body {
 }
 
 .mobile-download-section {
-  spacing: 20;
+  padding: 20px;
+  background-color: #000;
 }
 
 .modal {
@@ -428,4 +430,17 @@ body {
 
 .show-meaning-button {
   font-size: 0.7rem;
+}
+
+.description-image {
+  width: 100%;
+  max-width: 600px;
+}
+
+.number-checker-section {
+  padding: 20px;
+}
+
+.mobile-description-image {
+  height: 100%;
 }

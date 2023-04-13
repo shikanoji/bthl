@@ -48,7 +48,7 @@ var combineHexagramData = [
       "Thuận dã. Tương hội. Chờ đợi vì hiểm đằng trước, thuận theo, quây quần, tụ hội, vui hội, cứu xét, chầu về. Quân tử hoan hội chi tượng: quân tử vui vẻ hội họp, ăn uống chờ thời.",
     meaning:
       "Quẻ Cát. Nhu có nghĩa là an yên chờ đợi. Là lời dạy muốn tránh được nguy hiểm, tội vạ hãy kiên nhẫn. Quẻ lợi cho việc an dưỡng, nghỉ ngơi, không lợi cầu công danh, tiền tài.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 6,
@@ -68,7 +68,7 @@ var combineHexagramData = [
       "Chúng dã. Chúng trợ. Đông chúng, vừa làm thầy, vừa làm bạn, học hỏi lẫn nhau, nắm tay nhau qua truông, nâng đỡ. Sĩ chúng ủng tòng chi tượng: tượng quần chúng ủng hộ nhau.",
     meaning:
       "Quẻ cát, Sư tượng trưng cho chiến tranh, quyền uy, quân đội, giúp nâng cao địa vị, chức tước. Nếu biết tận dụng luồng sinh khí của quẻ này thì công danh sự nghiệp sẽ cực thịnh.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 8,
@@ -128,7 +128,7 @@ var combineHexagramData = [
       "Thân dã. Thân thiện. Trên dưới cùng lòng, cùng người ưa thích, cùng một bọn người. Hiệp lực đồng tâm chi tượng: tượng cùng người hiệp lực.",
     meaning:
       "Quẻ cát, Đồng Nhân là cùng với người. Quẻ tượng trưng cho sự đoàn kết trên dưới, ý thức được quyền lợi của mọi người, hợp tác giúp đỡ để thành công.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 14,
@@ -148,7 +148,7 @@ var combineHexagramData = [
       "Thoái dã. Cáo thoái. Khiêm tốn, nhún nhường, khiêm từ, cáo thoái, từ giã, lui vào trong, giữ gìn, nhốt vào trong, đóng cửa. Thượng hạ mông lung chi tượng: tượng trên dưới hoang mang.",
     meaning:
       "Quẻ cát, Khiêm trong khiêm nhường. Quẻ thể hiện triết lý đạo đức thực tế rõ ràng, lúc cực thịnh thì nên khiêm tốn để hạn chế sự đố kỵ. Càng khiêm tốn thì vận số càng được thịnh vượng.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 16,
@@ -158,7 +158,7 @@ var combineHexagramData = [
       "Duyệt dã. Thuận động. Dự bị, dự phòng, canh chừng, sớm, vui vầy. Thượng hạ duyệt dịch chi tượng: tượng trên dưới vui vẻ.",
     meaning:
       "Quẻ lợi, Dự mang đến điềm cát lành, thu được lòng tin tưởng, có niềm vui trong đời sống cũng như trong sự nghiệp. Trên bảo dưới nghe, mọi người đều được lợi.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 17,
@@ -218,7 +218,7 @@ var combineHexagramData = [
       "Sức dã. Quang minh. Trang sức, sửa sang, trang điểm, thấu suốt, rõ ràng. Quang minh thông đạt chi tượng: quang minh, sáng sủa, thấu suốt",
     meaning:
       "Quẻ cát, Bí có nghĩa là quang minh, sáng sủa. Quẻ mang khuynh hướng của cuộc sống văn minh, hưởng thụ, biểu tượng cho sắc đẹp bên ngoài, trang trí lịch sự hoặc màu sắc tao nhã. Quẻ này cầu Danh là đại cát",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 23,
@@ -258,7 +258,7 @@ var combineHexagramData = [
       "Tụ dã. Tích tụ. Chứa tụ, súc tích, lắng tụ một chỗ, dự trữ, đựng, để dành. Đồng loại hoan hội chi tượng: đồng loại hội họp vui vẻ, cục bộ.",
     meaning:
       "Quẻ cát, Đại súc là tích tụ, nhóm lại, dự trữ. Quẻ báo hiệu thời vận đang đến, bắt đầu hanh thông, có sự bảo hộ của cấp trên, thành công trong công danh sự nghiệp, không ngừng được nâng chức, thăng tiến. Tuy nhiên Quẻ bất lợi cho những người thích sự tự do, phóng khoáng, không trói buộc.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 27,
@@ -268,7 +268,7 @@ var combineHexagramData = [
       "Dưỡng dã. Dung dưỡng. Chăm lo, tu bổ, thêm, ăn uống, bổ dưỡng, bồi dưỡng, ví như trời nuôi muôn vật, thánh nhân nuôi người. Phi long nhập uyên chi tượng: rồng vào vực nghỉ ngơi.",
     meaning:
       "Quẻ cát, Di là nuôi dưỡng, bồi dưỡng, tu bổ. Quẻ mang điềm báo đường quan lộc hanh thông, những mong muốn phát triển sự nghiệp địa vị đều thuận lợi.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 28,
@@ -278,7 +278,7 @@ var combineHexagramData = [
       "Họa dã. Cả quá. Cả quá ắt tai họa, quá mực thường, quá nhiều, giàu cương nghị ở trong. Nộn thảo kinh sương chi tượng: tượng cỏ non bị sương tuyết.",
     meaning:
       "Quẻ Lợi, Đại Quá là lớn lao. Quẻ thể hiện một tình thế vững vàng, mặc dù trước mắt có nhiều gian nan trắc trở nhưng với tinh thần quyết tâm thì mọi việc sẽ đạt được thành công như ý. Nhưng cần chú ý dù hơn người vẫn nên khiêm nhường, vì lý lẽ thịnh quá tất suy.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 29,
@@ -298,7 +298,7 @@ var combineHexagramData = [
       "Lệ dã. Sáng chói. Sáng sủa, trống trải, trống trơn, tỏa ra, bám vào, phụ bám, phô trương ra ngoài. Môn hộ bất ninh chi tượng: tượng nhà cửa không yên.Ly còn nghĩa thứ nhì là sáng: nét ở giữa dứt, tức là ở giữa rỗng, rỗng thì sáng. Lửa sáng, mặt trời sáng, cho nên Ly có có tượng là lửa, là mặt trời. Sau cùng Ly còn có nghĩa là rời ra, như chia Ly",
     meaning:
       "Quẻ hanh, Ly là ngọn lửa. Quẻ tượng trưng cho sự may mắn, thành công, nổi bật. Lợi nhất cho việc cầu danh tiếng, sắc đẹp, sự chú ý.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 31,
@@ -308,7 +308,7 @@ var combineHexagramData = [
       "Cảm dã. Thụ cảm. Cảm xúc, thọ nhận, cảm ứng, nghĩ đến, nghe thấy, xúc động. Nam nữ giao cảm chi tượng: tượng nam nữ có tình ý, tình yêu.",
     meaning:
       " Quẻ cát, Hàm trong hàm ý. Quẻ thể hiện cho sự hợp tác, hiểu ý, hưởng ứng thông suốt, mọi việc được thành công như ý. Lợi cho việc phát triển tình cảm. ",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 32,
@@ -318,7 +318,7 @@ var combineHexagramData = [
       "Cửu dã. Trường cửu. Lâu dài, chậm chạp, đạo lâu bền như vợ chồng, kéo dài câu chuyện, thâm giao, nghĩa cố tri, xưa, cũ",
     meaning:
       "Quẻ cát, Hằng trong vĩnh hằng. Quẻ thể hiện đạo trung thành, sự lâu dài, bền vững, lý tưởng hoặc quy luật nhất định.Trong sự nghiệp, nếu trung với chính nghĩa, chính sách nhân đạo thì tài lộc sẽ được bền vững, vị trí được nâng cao.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 33,
@@ -338,7 +338,7 @@ var combineHexagramData = [
       "Chí dã. Tự cường. Ý chí riêng, bụng nghĩ, hướng thượng, ý định, vượng sức, thịnh đại, trên cao, chót vót, lên trên, chí khí, có lập trường. Phượng tập đăng sơn chi tượng: tượng phượng đậu trên núi.",
     meaning:
       "Quẻ cát, Đại Tráng là ý chí lớn lao. Quẻ báo hiệu vận số thịnh vượng và phát triển lớn. Người dụng quẻ tất được ý chí kiên cường, sức mạnh để vượt qua mọi chướng ngại.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 35,
@@ -348,7 +348,7 @@ var combineHexagramData = [
       "Tiến dã. Hiển hiện. Đi hoặc tới, tiến tới gần, theo mực thường, lửa đã hiện trên đất, trưng bày. Long kiến trình tường chi tượng: tượng rồng hiện điềm lành",
     meaning:
       "Quẻ cát, Tấn trong tấn tới, tấn công. Quẻ báo hiệu nguy hiểm đã hết, cuộc đời mở ra với bao điều sáng sủa, văn minh đang ở phía trước.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 36,
@@ -368,7 +368,7 @@ var combineHexagramData = [
       "Đồng dã. Nảy nở. Người nhà, gia đinh, cùng gia đình, đồng chủng, đồng nghiệp, cùng xóm, sinh sôi, khai thác mở mang thêm. Khai hoa kết tử chi tượng: trổ bông sinh trái, nẩy mầm.",
     meaning:
       "Quẻ cát, Gia Nhân nghĩa là người trong gia đình. Thể hiện ý nghĩa gia đình hòa thuận, đường con cái được như ý. Lợi cho việc quan hệ người với người.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 38,
@@ -398,7 +398,7 @@ var combineHexagramData = [
       "Tán dã. Nơi nơi. Làm cho tan đi, như làm tan sự nguy hiểm, giải phóng, giải tán, loan truyền, tuyên truyền, phân phát, lưu thông, ban rải, ân xá. Lôi vũ tác giải chi tượng: tượng sấm động mưa bay.",
     meaning:
       "Quẻ cát, Giải nghĩa là hoá giải, báo hiệu những khó khăn sẽ sớm được khắc phục, giải quyết, mở ra một thời kỳ mới cho người dụng quẻ đó là cuộc sống dễ dàng, thoải mái hơn, đồng thời thể hiện tinh thần vượt qua khó khăn mạnh mẽ.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 41,
@@ -418,7 +418,7 @@ var combineHexagramData = [
       "Ích lợi. Tiến ích. Thêm được lợi, giúp dùm, tiếng dội xa, vượt lên, phóng mình tới. Hồng hộc xung tiêu chi tượng: chim hồng, chim hộc bay qua mây mù.",
     meaning:
       "Quẻ cát. Ích có nghĩa là lợi ích, ích lợi cho bản thân. Điềm báo thể hiện cho công danh sự nghiệp được mở rộng, được quý nhân phù trợ nên mọi việc khó khăn trở ngại đều có thể vượt qua.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 43,
@@ -448,7 +448,7 @@ var combineHexagramData = [
       "Tụ dã. Trưng tập. Nhóm họp, biểu tình, dồn đống, quần tụ nhau lại, kéo đến, kéo thành bầy. Long vân tế hội chi tượng: tượng rồng mây giao hội.",
     meaning:
       "Quẻ Lợi. Mang hàm nghĩa hội nhóm, tập hợp. Quẻ lợi cho các công việc đoàn thể, quần chúng, gom lại, hội tụ tất được thịnh vượng.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 46,
@@ -488,7 +488,7 @@ var combineHexagramData = [
       "Cải dã. Cải biến. Bỏ lối cũ, cải cách, hoán cải, cách tuyệt, cánh chim thay lông. Thiên uyên huyền cách chi tượng: tượng vực trời xa thẳm.",
     meaning:
       "Quẻ cát, Cách trong cải cách. Quẻ mang đến thành công tốt đẹp, không gây ra những xáo trộn, đại diện cho cuộc cách mạng, thay đổi nhân sinh quan bằng những điều tiến bộ hơn. Lợi cho việc thay đổi.",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 50,
@@ -528,7 +528,7 @@ var combineHexagramData = [
       "Tiến dã. Tuần tự. Từ từ, thong thả đến, lần lần, bò tới, chậm chạp, nhai nhỏ nuốt vào. Phúc lộc đồng lâm chi tượng: phúc lộc cùng đến.",
     meaning:
       "Quẻ cát, Tiệm trong tiệm cận. Quẻ thể hiện sự chuyển động từ từ tới thời vận tốt, không nên hấp tấp mà tiến, phải đặt kế hoạch tiến từng bước vững chắc mới được thành quả ưng ý",
-    rate: "Cát", rank: "A", rank: "A",
+    rate: "Cát", rank: "A",
   },
   {
     no: 54,
